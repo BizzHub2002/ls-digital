@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LS Digital — Building the Web</title>
+<meta name="description" content="LS Digital builds fast, clean, modern websites. Choose a one-time build you own outright, or a fully managed monthly plan — hosting, domain, and support included.">
+<meta name="theme-color" content="#09090d">
+
+<!-- favicons -->
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
+<link rel="apple-touch-icon" href="assets/logo-mark.png">
+
+<!-- social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lsdigitaldev.com/">
+<meta property="og:title" content="LS Digital — Building the Web">
+<meta property="og:description" content="Fast, clean, custom-built websites. Own it outright, or let us run it for you.">
+<meta property="og:image" content="https://lsdigitaldev.com/assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LS Digital — Building the Web">
+<meta name="twitter:description" content="Fast, clean, custom-built websites. Own it outright, or let us run it for you.">
+<meta name="twitter:image" content="https://lsdigitaldev.com/assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo-mark.png" alt="" class="brand__mark">
+      <span class="brand__text">LS Digital</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#services" data-nav>Services</a>
+      <a href="#packages" data-nav>Packages</a>
+      <a href="#process" data-nav>Process</a>
+      <a href="#work" data-nav>Work</a>
+      <a href="#stack" data-nav>Stack</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#contact" data-nav class="btn btn--sm btn--primary">Contact us</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container hero__inner">
+    <div class="hero__copy reveal">
+      <p class="eyebrow"><span class="dot dot--live"></span> Currently accepting new projects</p>
+      <h1>
+        We build the <span class="typed-wrap"><span id="typed"></span><span class="cursor">|</span></span>
+      </h1>
+      <p class="hero__sub">
+        LS Digital is a web development studio — small by design, so every project gets full attention.
+        We design and build fast, modern, good-looking websites for businesses that want to stand out online.
+      </p>
+      <div class="hero__cta">
+        <a href="#packages" class="btn btn--primary">View packages →</a>
+        <a href="#contact" class="btn btn--ghost">Get a quote</a>
+      </div>
+      <div class="hero__badges">
+        <span>Custom-built</span>
+        <span>Mobile-first</span>
+        <span>SEO-ready</span>
+        <span>Fast delivery</span>
+      </div>
+    </div>
+
+    <div class="hero__panel reveal">
+      <div class="window">
+        <div class="window__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="window__title">project.config.js</span>
+        </div>
+        <pre class="window__body"><code><span class="c-key">const</span> <span class="c-var">project</span> = <span class="c-key">new</span> <span class="c-fn">LSDigital</span>({
+  client:        <span class="c-str">"you"</span>,
+  design:        <span class="c-str">"custom"</span>,
+  responsive:    <span class="c-bool">true</span>,
+  performance:   <span class="c-str">"fast"</span>,
+  ownership: {
+    oneTime:     <span class="c-str">"you own everything"</span>,
+    managed:     <span class="c-str">"we run it for you"</span>
+  },
+  status:        <span class="c-str">"in production"</span>
+});
+
+<span class="c-fn">project</span>.<span class="c-key">launch</span>();
+<span class="c-comment">// building great websites, one project at a time</span></code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <p class="section__tag"><span class="tag__num">01</span> Services</p>
+    <h2 class="section__title">What I <span class="accent">build</span></h2>
+    <p class="section__lead">Every project is custom-built for your business — no drag-and-drop builders, no recycled themes.</p>
+
+    <div class="grid grid--4">
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg>
+        </div>
+        <h3>Custom Web Development</h3>
+        <p>Hand-coded, responsive sites built from scratch to match your brand — not a template with your logo slapped on.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Web Design (UI/UX)</h3>
+        <p>Clean, modern interfaces designed for real users — clear hierarchy, fast load, and a look that feels premium.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </div>
+        <h3>E-Commerce</h3>
+        <p>Online stores that actually convert — product pages, checkout flow, and payments wired up correctly.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </div>
+        <h3>Hosting &amp; Maintenance</h3>
+        <p>Domain, hosting, backups, security patches, and content updates — handled for you, month to month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PACKAGES / PRICING ============ -->
+<section class="section section--alt" id="packages">
+  <div class="container">
+    <p class="section__tag"><span class="tag__num">02</span> Packages</p>
+    <h2 class="section__title">Three ways to <span class="accent">work together</span></h2>
+    <p class="section__lead">Same quality build every time. Pick the path that fits your budget and how you want to own and run it.</p>
+
+    <div class="grid grid--3 pricing">
+
+      <!-- ONE-TIME -->
+      <div class="price-card reveal">
+        <div class="price-card__head">
+          <p class="price-card__label">One-time build</p>
+          <h3>Own It Outright</h3>
+          <p class="price-card__price"><span class="accent">$399</span><span class="price-card__period">one-time</span></p>
+          <p class="price-card__desc">Pay once, own it forever — no subscriptions, no lock-in.</p>
+        </div>
+        <ul class="price-card__list">
+          <li><span class="check">✓</span> Fully custom design &amp; build</li>
+          <li><span class="check">✓</span> Source files &amp; assets handed over</li>
+          <li><span class="check">✓</span> Mobile-responsive, SEO-ready</li>
+          <li><span class="check">✓</span> 50% deposit to start, 50% due at launch</li>
+          <li><span class="check">✓</span> Optional hosting &amp; management — $25/mo, first month free, no contract</li>
+          <li><span class="check">✓</span> 14-day post-launch bug fixing</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block" data-package="one-time">Choose one-time build</a>
+      </div>
+
+      <!-- MONTHLY -->
+      <div class="price-card price-card--popular reveal">
+        <span class="price-card__ribbon">Most popular</span>
+        <div class="price-card__head">
+          <p class="price-card__label">Managed monthly plan</p>
+          <h3>We Run It For You</h3>
+          <p class="price-card__price"><span class="accent">$89</span><span class="price-card__period">/ month</span></p>
+          <p class="price-card__desc">No upfront cost • First month free</p>
+        </div>
+        <ul class="price-card__list">
+          <li><span class="check">✓</span> Fully custom design &amp; build</li>
+          <li><span class="check">✓</span> Domain &amp; hosting included</li>
+          <li><span class="check">✓</span> Mobile-responsive, SEO-ready</li>
+          <li><span class="check">✓</span> Security patches &amp; backups</li>
+          <li><span class="check">✓</span> Monthly content updates included</li>
+          <li><span class="check">✓</span> Priority email/text support</li>
+          <li><span class="check">✓</span> No long-term contract. Cancel anytime.</li>
+          <li><span class="check">✓</span> First month free. Billing begins 30 days after your website goes live.</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--block" data-package="monthly">Choose monthly plan</a>
+      </div>
+
+      <!-- ECOMMERCE -->
+      <div class="price-card reveal">
+        <div class="price-card__head">
+          <p class="price-card__label">E-commerce build</p>
+          <h3>Launch Your Store</h3>
+          <p class="price-card__price"><span class="accent">$500</span><span class="price-card__period">starting at</span></p>
+          <p class="price-card__addon">+ $100/mo required care plan</p>
+          <p class="price-card__desc">One-time build fee. Final price depends on store size and features.</p>
+        </div>
+        <ul class="price-card__list">
+          <li><span class="check">✓</span> Custom storefront &amp; product catalog</li>
+          <li><span class="check">✓</span> Secure cart &amp; payment processing</li>
+          <li><span class="check">✓</span> Mobile-responsive, SEO-ready</li>
+          <li><span class="check">✓</span> 50% deposit to start, 50% due at launch</li>
+          <li><span class="check">✓</span> $100/mo required care plan — updates, fixes &amp; priority support</li>
+          <li><span class="check">✓</span> Built to scale as your catalog grows</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block" data-package="ecommerce">Choose e-commerce build</a>
+      </div>
+
+    </div>
+
+    <p class="pricing__note"><span class="pricing__note-icon">i</span> Deposits are due to begin work, with the balance due at launch. Final pricing depends on scope (pages, features, products, integrations, etc) — you'll get an exact number before anything is signed.</p>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section" id="process">
+  <div class="container">
+    <p class="section__tag"><span class="tag__num">03</span> Process</p>
+    <h2 class="section__title">How a project <span class="accent">runs</span></h2>
+
+    <div class="steps">
+      <div class="step reveal">
+        <span class="step__num">01</span>
+        <div>
+          <h3>Discovery call</h3>
+          <p>We talk goals, pages, features, budget, and timeline.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">02</span>
+        <div>
+          <h3>Design</h3>
+          <p>You get a look &amp; feel mockup before any code is written.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">03</span>
+        <div>
+          <h3>Development</h3>
+          <p>Custom build, with progress updates as we go.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">04</span>
+        <div>
+          <h3>Review &amp; revisions</h3>
+          <p>You test it, we refine it.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">05</span>
+        <div>
+          <h3>Launch</h3>
+          <p>Site goes live on your domain.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <span class="step__num">06</span>
+        <div>
+          <h3>Aftercare</h3>
+          <p>One-time plan: 14-day fix window. Monthly plan: ongoing support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="section" id="work">
+  <div class="container">
+    <p class="section__tag"><span class="tag__num">04</span> Work</p>
+    <h2 class="section__title">Recent <span class="accent">work</span></h2>
+    <p class="section__lead">A live project, built start to finish.</p>
+
+    <div class="work-card reveal">
+      <a href="https://mastersofdafade.shop/" target="_blank" rel="noopener" class="work-card__media">
+        <img src="assets/work-mastersofdafade.jpg" alt="Masters of da Fade website homepage">
+      </a>
+      <div class="work-card__body">
+        <p class="work-card__tag">Barber shop &middot; Ruidoso, NM</p>
+        <h3>Masters of da Fade</h3>
+        <p>A bold, animated landing page for a local barbershop — built to make a strong first impression and get customers straight to booking.</p>
+        <a href="https://mastersofdafade.shop/" target="_blank" rel="noopener" class="work-card__link">View live site →</a>
+      </div>
+    </div>
+
+    <p class="work-divider"><span class="work-divider__badge">⚠ Demo work</span> Built on spec to show what's possible — not real, live client sites.</p>
+    <div class="grid grid--2 work-grid">
+      <a href="https://lina4234.netlify.app/" target="_blank" rel="noopener" class="work-mini reveal">
+        <div class="work-mini__media">
+          <span class="work-mini__stamp">Demo</span>
+          <img src="assets/work-angelina.jpg" alt="Angelina Jewelry concept homepage">
+        </div>
+        <div class="work-mini__body">
+          <p class="work-mini__tag">Concept &middot; Jewelry Store</p>
+          <h4>Angelina Jewelry</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="section section--alt" id="stack">
+  <div class="container">
+    <p class="section__tag"><span class="tag__num">05</span> Stack</p>
+    <h2 class="section__title">Built with tools that <span class="accent">scale</span></h2>
+    <p class="section__lead">No mystery no-code black boxes — real code, so your site stays fast and future-proof.</p>
+
+    <div class="stack-grid">
+      <span class="chip">HTML5</span>
+      <span class="chip">CSS3</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">React</span>
+      <span class="chip">Node.js</span>
+      <span class="chip">Next.js</span>
+      <span class="chip">Tailwind</span>
+      <span class="chip">Git</span>
+      <span class="chip">Figma</span>
+      <span class="chip">REST APIs</span>
+      <span class="chip">SEO</span>
+      <span class="chip">CI/CD</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container about">
+    <div class="reveal">
+      <p class="section__tag"><span class="tag__num">06</span> About</p>
+      <h2 class="section__title">Who's <span class="accent">behind this</span></h2>
+      <p class="section__lead">LS Digital is a small web studio, not an agency assembly line. No account managers, no outsourced dev teams, no hand-offs — you work directly with the person actually building your site, from the first call to launch.</p>
+
+      <ul class="about__list">
+        <li><span class="accent">→</span> Real custom code, not a recycled template</li>
+        <li><span class="accent">→</span> Direct communication, every step</li>
+        <li><span class="accent">→</span> Pricing that fits your budget, not an agency's overhead</li>
+        <li><span class="accent">→</span> A site that's actually yours, if that's the plan you pick</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--alt" id="contact">
+  <div class="container">
+    <p class="section__tag"><span class="tag__num">07</span> Contact</p>
+    <h2 class="section__title">Let's <span class="accent">build something</span></h2>
+    <p class="section__lead">Tell me a bit about your project. I'll reply with next steps and a real quote.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="contactForm">
+        <input type="hidden" name="access_key" value="7315b4a8-824f-4919-af21-5656b65f55c0">
+        <input type="hidden" name="subject" value="New quote request — LS Digital">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Jane Doe" required>
+        </label>
+        <label>
+          <span>Business name</span>
+          <input type="text" name="business" placeholder="Your business name">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          <span>Phone <span class="label__optional">(optional)</span></span>
+          <input type="tel" name="phone" placeholder="(555) 123-4567">
+        </label>
+        <label>
+          <span>Which package interests you?</span>
+          <select name="package">
+            <option value="one-time">One-Time Build — $399</option>
+            <option value="monthly">Managed Monthly Plan — $89/mo</option>
+            <option value="ecommerce">E-Commerce Build — from $500</option>
+            <option value="not-sure">Not sure yet</option>
+          </select>
+        </label>
+        <label>
+          <span>Tell me what you need</span>
+          <textarea name="message" rows="5" placeholder="A short description of your project..." required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary btn--block">Send message</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+
+      <div class="contact-info reveal">
+        <div class="window">
+          <div class="window__bar">
+            <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+            <span class="window__title">contact.json</span>
+          </div>
+          <pre class="window__body"><code>{
+  <span class="c-var">"email"</span>: <span class="c-str">"LSdigital024@gmail.com"</span>,
+  <span class="c-var">"phone"</span>: <span class="c-str">"(575) 808-9165"</span>,
+  <span class="c-var">"response_time"</span>: <span class="c-str">"within 1 business day"</span>,
+  <span class="c-var">"status"</span>: <span class="c-str">"accepting new projects"</span>
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo-mark.png" alt="" class="brand__mark">
+      <span class="brand__text">LS Digital</span>
+    </a>
+    <p class="footer__tagline">Building the web.</p>
+    <nav class="footer__links">
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#process">Process</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer__copy">© <span id="year"></span> LS Digital. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
