@@ -328,6 +328,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 .card h3 { color: var(--text); font-size: 17.5px; margin-bottom: 10px; font-weight: 700; }
 .card p { font-size: 14.5px; margin: 0; }
 
+.card__pricing { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border-soft); }
+.card__pricing li { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 13.5px; color: var(--text-dim); padding: 4px 0; font-weight: 500; }
+.card__pricing .accent { font-weight: 700; }
+
 /* ==========================================================================
    Pricing
    ========================================================================== */
