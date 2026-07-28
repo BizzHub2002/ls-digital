@@ -248,7 +248,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-weight: 800;
 }
 
-.typed-wrap { display: inline-block; min-width: 7.5ch; color: var(--accent-bright); }
+.typed-wrap { color: var(--accent-bright); }
 .cursor { color: var(--accent-bright); font-weight: 300; animation: blink 1s step-end infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 
@@ -751,6 +751,7 @@ a.info-card__value:hover { color: var(--accent-bright); }
   .footer__inner { justify-content: center; text-align: center; }
 
   .hero { padding: 76px 0 56px; }
+  .typed-wrap { display: inline-block; min-width: 7.5ch; }
   .hero__cta { flex-direction: column; align-items: stretch; }
   .hero__cta .btn { justify-content: center; }
 
