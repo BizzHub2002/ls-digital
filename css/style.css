@@ -248,7 +248,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-weight: 800;
 }
 
-.typed-wrap { color: var(--accent-bright); }
+.typed-wrap { display: inline-block; min-width: 7.5ch; color: var(--accent-bright); }
 .cursor { color: var(--accent-bright); font-weight: 300; animation: blink 1s step-end infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 
