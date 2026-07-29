@@ -559,24 +559,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .step p { font-size: 14px; margin: 0; }
 
 /* ==========================================================================
-   Stack chips
-   ========================================================================== */
-
-.stack-grid { display: flex; flex-wrap: wrap; gap: 12px; }
-
-.chip {
-  font-family: var(--font-mono);
-  font-size: 13.5px;
-  color: var(--text-dim);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 10px 16px;
-  border-radius: 999px;
-  transition: border-color .2s ease, color .2s ease;
-}
-.chip:hover { border-color: var(--accent); color: var(--accent-bright); }
-
-/* ==========================================================================
    About
    ========================================================================== */
 
